@@ -1,15 +1,58 @@
-/*reset----------------------------------------------------*/
-*
+
+.content
 {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-a
-{
-    color:orangered;
-}
-header
-{
-    color: orchid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    form
+    {
+        width: 700px;
+        border: 5px solid grey;
+        border-radius: 3px;
+        box-shadow: 5px 5px 10px grey;
+        padding: 4rem;
+        display: flex;
+        flex-direction: column;
+        .form-group
+        {
+            margin-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+            label
+            {
+                font-size: 2rem;
+                color: var(--accent);
+                font-weight: 700;
+                margin-bottom: 1rem;            
+        }
+            input,textarea
+            {
+                border: 1px solid var(--divider);
+                padding: 1rem;
+                outline: 0;
+                border-radius: 3px;
+                &:focus
+                {
+                   border-color: var(--accent);
+                   
+                }
+            }
+            textarea 
+            {
+                min-height:20rem ;
+            }
+           
+        }
+        .form-btn-container
+        {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            .btn
+            {
+                margin-left: 0.5rem;
+            }
+
+        }
+    }
 }

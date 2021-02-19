@@ -23,8 +23,41 @@
 header
 {
   grid-area: header;
-  background-color: green;
+  background: var(--dark);
   padding: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  a
+  {
+    color: white;
+  }
+  .header-brand
+  {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+ul
+  {
+    display: flex;
+    li
+    {
+      .header-nav
+      {
+        font-size: 1.8;
+        padding: 0 10px;
+
+      }
+      .active
+      {
+        font-weight: 700;
+        text-decoration: underline;
+      }
+    }
+  }
+ 
 }
 .content
 {
@@ -33,6 +66,10 @@ header
 }
 footer
 {
+  background: var(--dark-grey);
   grid-area: footer;
   padding: 20px;
+  font-size: 1.8rem;
+  text-align: center;
+  color: white;
 }
